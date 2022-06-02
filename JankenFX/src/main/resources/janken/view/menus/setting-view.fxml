@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0"
+            fx:controller="janken.view.menus.SettingView"
+            stylesheets="@../components/style.css">
+    <top>
+        <VBox alignment="CENTER">
+            <Label text="%game-settings" styleClass="headline" />
+        </VBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" styleClass="setting-vbox">
+            <HBox alignment="CENTER_LEFT">
+                <Label text="%numOfPlayers"/>
+                <Pane HBox.hgrow="ALWAYS"/>
+                <Spinner min="2" max="10" fx:id="numberOfPlayers"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Label text="%rule"/>
+                <Pane HBox.hgrow="ALWAYS"/>
+                <RadioButton text="%default" selected="true" fx:id="defaultRadio">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="ruleToggle"/>
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton text="%scoreBase" fx:id="scoreRadio">
+                    <toggleGroup>
+                        <fx:reference source="ruleToggle"/>
+                    </toggleGroup>
+                </RadioButton>
+            </HBox>
+            <VBox>
+                <Label text="%availablePlayers" />
+                <VBox>
+                    <ListView fx:id="playerClassList"/>
+                    <Button text="%loadPlayers" onAction="#loadClass"/>
+                </VBox>
+            </VBox>
+            <VBox>
+                <CheckBox text="%concludeMatchPerProceed" selected="false" fx:id="concludePerProceedCheckBox"/>
+                <CheckBox text="%showResultWindowAfterMatch" selected="false" disable="true" fx:id="showResultCheckBox">
+                </CheckBox>
+            </VBox>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <padding>
+                <Insets bottom="10" right="10"/>
+            </padding>
+            <Button text="Cancel" onAction="#discardChange"/>
+            <Button text="OK" onAction="#applyChange" fx:id="okBtn"/>
+        </HBox>
+    </bottom>
+</BorderPane>

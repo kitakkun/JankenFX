@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="janken.view.components.ResultView"
+            stylesheets="@style.css">
+    <top>
+        <Label text="%result" styleClass="headline"/>
+    </top>
+
+    <center>
+        <GridPane fx:id="resultTable" hgap="25" vgap="15" alignment="CENTER">
+            <padding>
+                <Insets bottom="25"/>
+            </padding>
+        </GridPane>
+    </center>
+
+    <bottom>
+        <VBox spacing="15" BorderPane.alignment="CENTER" alignment="CENTER">
+            <Label text="game" fx:id="gameCntMsg" alignment="CENTER"/>
+            <Button text="Close" onAction="#closeWindow" alignment="CENTER" />
+        </VBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JankenFX">
+    <output-path>$PROJECT_DIR$/out/artifacts/JankenFX</output-path>
+    <root id="archive" name="JankenFX.jar">
+      <element id="module-output" name="JankenFX" />
+    </root>
+  </artifact>
+</component>

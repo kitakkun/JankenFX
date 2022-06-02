@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      prefHeight="170.0" prefWidth="280.0" stylesheets="@../components/style.css">
+   <VBox alignment="CENTER" spacing="15">
+      <VBox>
+         <Label text="%app-name-and-version" styleClass="app-name"/>
+         <Label text="%copyright" styleClass="copyright"/>
+      </VBox>
+      <Label text="OpenJDK 17.0.2, JavaFX 17.0.1" />
+   </VBox>
+</HBox>

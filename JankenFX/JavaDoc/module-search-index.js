@@ -1,0 +1,1 @@
+moduleSearchIndex = [{"l":"janken"}];updateSearchResults();

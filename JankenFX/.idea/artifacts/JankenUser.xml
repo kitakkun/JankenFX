@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JankenUser">
+    <output-path>$PROJECT_DIR$/out/artifacts/JankenUser</output-path>
+    <root id="archive" name="JankenUser.jar">
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/java/janken/user" />
+    </root>
+  </artifact>
+</component>

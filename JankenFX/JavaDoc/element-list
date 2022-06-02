@@ -1,0 +1,14 @@
+module:janken
+janken.app
+janken.system
+janken.system.core
+janken.system.datamodel
+janken.system.io
+janken.system.manager
+janken.system.preferences
+janken.system.tool
+janken.user
+janken.util
+janken.view
+janken.view.components
+janken.view.menus

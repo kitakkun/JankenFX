@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import janken.view.components.HandIndicatorView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="janken.view.components.SelectHandView"
+      stylesheets="@style.css"
+      alignment="CENTER" prefWidth="200" prefHeight="150">
+    <VBox alignment="CENTER" spacing="20">
+        <Label text="%choose-hand" textAlignment="CENTER" alignment="CENTER"/>
+        <HandIndicatorView fx:id="indicator"/>
+        <Button text="OK" onAction="#exit"/>
+    </VBox>
+</HBox>

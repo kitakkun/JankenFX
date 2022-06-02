@@ -1,0 +1,33 @@
+.white-bg {
+    -fx-background-color: white;
+}
+
+.red-bg {
+    -fx-background-color: red;
+}
+
+.app-name {
+    -fx-font-size: 2em;
+}
+
+.copy-right {
+    -fx-font-size: 1.5em;
+}
+
+.headline {
+    -fx-padding: 20;
+    -fx-font-size: 2em;
+}
+
+.player-status-view-table {
+    -fx-padding: 20;
+}
+
+.setting-vbox {
+    -fx-spacing: 10;
+    -fx-padding: 0 100;
+}
+
+.paragraph {
+    -fx-font-size: 1.2em;
+}

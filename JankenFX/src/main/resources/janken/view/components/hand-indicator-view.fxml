@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="janken.view.components.HandIndicatorView"
+      >
+    <fx:define>
+        <Double fx:id="IMAGE_SIZE" fx:value="50"/>
+    </fx:define>
+    <Pane fx:id="rock" styleClass="white-bg">
+        <ImageView fitWidth="$IMAGE_SIZE" fitHeight="$IMAGE_SIZE">
+            <Image url="@../../../images/rock.png"/>
+        </ImageView>
+    </Pane>
+    <Pane fx:id="scissors" styleClass="white-bg">
+        <ImageView fitWidth="$IMAGE_SIZE" fitHeight="$IMAGE_SIZE">
+            <Image url="@../../../images/scissors.png"/>
+        </ImageView>
+    </Pane>
+    <Pane fx:id="paper" styleClass="white-bg">
+        <ImageView fitWidth="$IMAGE_SIZE" fitHeight="$IMAGE_SIZE">
+            <Image url="@../../../images/paper.png"/>
+        </ImageView>
+    </Pane>
+</HBox>
