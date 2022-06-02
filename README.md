@@ -30,7 +30,7 @@ java -jar --module-path=/path/to/javafx/lib --add-modules=javafx.fxml,javafx.con
 
 ### メイン画面の使い方
 
-メイン画面には，中央部に試合内容を示す表，下部に試合実行用コントロールが配置されている．
+メイン画面には，中央部に試合内容を示す表，下部に試合実行用コントロールが配置されています．
 ![main_screen](https://user-images.githubusercontent.com/48154936/171579559-ce550d2b-9f53-4f62-b212-5b278b099b12.png)
 
 - Name　プレイヤー識別名
